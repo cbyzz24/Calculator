@@ -11,28 +11,28 @@
         <div class="display" id="display">0.00</div>
         <div class="keypad">
             <div class="row1" id="row1">
-                <button id="7">7</button>
-                <button id="8">8</button>
-                <button id="9">9</button>
-                <button id="divide">÷</button>
+                <button id="7" onclick="appendToDisplay()">7</button>
+                <button id="8" onclick="appendToDisplay()">8</button>
+                <button id="9" onclick="appendToDisplay()">9</button>
+                <button id="divide" onclick="appendToDisplay()">/</button>
             </div>
             <div class="row2" id="row2">
-                <button id="4">4</button>
-                <button id="5">5</button>
-                <button id="6">6</button>
-                <button id="multiply">X</button>
+                <button id="4" onclick="appendToDisplay()">4</button>
+                <button id="5" onclick="appendToDisplay()">5</button>
+                <button id="6" onclick="appendToDisplay()">6</button>
+                <button id="multiply" onclick="appendToDisplay()">*</button>
             </div>
             <div class="row3" id="row3">
-                <button id="1">1</button>
-                <button id="2">2</button>
-                <button id="3">3</button>
-                <button id="subtract">-</button>
+                <button id="1" onclick="appendToDisplay()">1</button>
+                <button id="2" onclick="appendToDisplay()">2</button>
+                <button id="3" onclick="appendToDisplay()">3</button>
+                <button id="subtract" onclick="appendToDisplay()">-</button>
             </div>
             <div class="row4" id="row4">
-                <button id="clear">AC</button>
-                <button id="0">0</button>
-                <button id="decimal">.</button>
-                <button id="equal">=</button>
+                <button id="clear" onclick="clearDisplay()">AC</button>
+                <button id="0" onclick="appendToDisplay()">0</button>
+                <button id="decimal" onclick="appendToDisplay()">.</button>
+                <button id="equal" onclick="calculate()">=</button>
             </div>
         </div>
     </div>
