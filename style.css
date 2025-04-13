@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.mainWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    /* height: 500px; */
+    border: 3px solid hsla(0, 0%, 13%, 0.7);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+    overflow: hidden;
+    background-color: hsl(50, 12%, 76%);
+    box-sizing: border-box;
+
+}
+
+.display{
+    height: 75px;
+    background-color: white;
+    width: 90%;
+    font-size: 3.75rem;
+    text-align: right;
+    align-content: center;
+    padding-right: 8px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.keypad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 90%;
+    height: 300px;
+    padding: 12px 0px;
+}
+
+button{
+    height: 52px;
+    width: 52px;
+    border-radius: 10px;
+    margin: 8px 8px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: hsl(0, 0%, 46%);
+    color: white;
+    cursor: pointer;
+    transition: height width ease 1s;
+    /* transition: height 0.3s; */
+}
+
+button:hover{
+    height: 57px;
+    width: 57px;
+    font-size: 1.40rem;
+}
+
+#divide{
+    background-color: hsl(33, 100%, 45%);
+}
+#multiply{
+    background-color: hsl(33, 100%, 45%);
+    font-size: 0.90rem;
+}
+#subtract{
+    background-color: hsl(33, 100%, 45%);
+    font-size: 1.6rem;
+}
+
+#decimal{
+    font-size: 1.6rem;
+}
+
+#equal{
+    background-color: hsl(33, 85%, 57%);
+}
+
+#clear{
+    /* background-color: hsl(0, 0%, 66%); */
+    background-color: rgba(0, 0, 0, 0.705);
+}
