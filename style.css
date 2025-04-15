@@ -36,7 +36,9 @@ body{
     align-content: center;
     padding-right: 8px;
     margin-top: 30px;
+    border: none;
     border-radius: 8px;
+    box-shadow: 3px 3px 5px inset;
 }
 
 .keypad{
@@ -49,7 +51,7 @@ body{
     border: 1px solid black;
     border-radius: 10px;
     width: 90%;
-    height: 300px;
+    height: 350px;
     padding: 12px 0px;
 }
 
@@ -73,6 +75,18 @@ button:hover{
     font-size: 1.40rem;
 }
 
+.row4{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.row5{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
 #divide{
     background-color: hsl(33, 100%, 45%);
 }
@@ -85,15 +99,21 @@ button:hover{
     font-size: 1.6rem;
 }
 
+#add{
+    background-color: hsl(33, 100%, 45%);
+}
+
 #decimal{
     font-size: 1.6rem;
 }
 
 #equal{
-    background-color: hsl(33, 85%, 57%);
+    background-color: hsla(96, 85%, 32%, 0.856);
+    width: 115px;
 }
 
 #clear{
-    /* background-color: hsl(0, 0%, 66%); */
-    background-color: rgba(0, 0, 0, 0.705);
+    /* background-color: rgba(0, 0, 0, 0.705); */
+    background-color: hsla(0, 100%, 32%, 0.856);
+    width: 114px;
 }
