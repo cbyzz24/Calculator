@@ -16,7 +16,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 340px;
+    width: 370px;
     /* height: 500px; */
     border: 3px solid hsla(0, 0%, 13%, 0.7);
     border-radius: 8px;
@@ -24,6 +24,7 @@ body{
     overflow: hidden;
     background-color: hsl(50, 12%, 76%);
     box-sizing: border-box;
+    padding: 0px 15px;
 
 }
 
@@ -42,65 +43,77 @@ body{
 }
 
 .keypad{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     margin-top: 15px;
     margin-bottom: 25px;
     border: 1px solid black;
     border-radius: 10px;
     width: 90%;
-    height: 350px;
-    padding: 12px 0px;
+    padding: 15px 15px;
+    
 }
 
 button{
-    height: 52px;
-    width: 52px;
+    padding: 15px 15px;
     border-radius: 10px;
-    margin: 8px 8px;
+    border: none;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0);
     font-size: 1.4rem;
     font-weight: bold;
     background-color: hsl(0, 0%, 46%);
     color: white;
     cursor: pointer;
-    transition: height ease 0.2s, width ease 0.2s;
+    /* transition: height ease 0.2s, width ease 0.2s; */
     /* transition: height 0.3s; */
+    /* transition: background-color ease 0.4s, font-weight ease 0.4s; */
+    transition: background-color ease 0.4s;
 }
 
 button:hover{
-    height: 57px;
-    width: 57px;
-    font-size: 1.40rem;
+    /* height: 57px;
+    width: 57px; */
+    /* padding: 25px 25px; */
+    background-color: hsl(0, 0%, 86%);
+    /* font-weight:800; */
 }
 
-.row4{
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-}
-
-.row5{
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-}
 
 #divide{
     background-color: hsl(33, 100%, 45%);
+    transition: background-color ease 0.4s;
+}
+
+#divide:hover{
+    background-color: hsl(0, 0%, 86%);
 }
 #multiply{
     background-color: hsl(33, 100%, 45%);
     font-size: 1.5rem;
+    transition: background-color ease 0.4s;
+}
+
+#multiply:hover{
+    background-color: hsl(0, 0%, 86%);
 }
 #subtract{
     background-color: hsl(33, 100%, 45%);
     font-size: 1.6rem;
+    transition: background-color ease 0.4s;
+}
+
+#subtract:hover{
+    background-color: hsl(0, 0%, 86%);
 }
 
 #add{
     background-color: hsl(33, 100%, 45%);
+    transition: background-color ease 0.4s;
+}
+
+#add:hover{
+    background-color: hsl(0, 0%, 86%);
 }
 
 #decimal{
@@ -109,11 +122,23 @@ button:hover{
 
 #equal{
     background-color: hsla(96, 85%, 32%, 0.856);
-    width: 115px;
+    grid-row-end: span 2;
+    transition: background-color ease 0.4s;
+}
+
+#equal:hover{
+    background-color: hsl(0, 0%, 86%);
 }
 
 #clear{
     /* background-color: rgba(0, 0, 0, 0.705); */
     background-color: hsla(0, 100%, 32%, 0.856);
-    width: 114px;
+    grid-column-end: span 3;
+    margin: 0px 35px;
+    transition: background-color ease 0.4s;
+
+}
+
+#clear:hover{
+    background-color: hsl(0, 0%, 86%);
 }
